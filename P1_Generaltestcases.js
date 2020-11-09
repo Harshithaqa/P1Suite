@@ -5,11 +5,6 @@ describe('Protractor psc2', function() {
   
  
 
-  it('psc application', function() {
-    obj.getURL();
-   //obj.getURL3();
- 
-   },500000);
  
    
    

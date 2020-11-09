@@ -3,11 +3,6 @@ describe('Protractor psc2', function() {
   var using=  require("jasmine-data-provider");
   var d=  require("./data.js");
   
-  it('psc application', function() {
-    obj.getURL();
-   
-  },500000);
-
 
 
 //userlogin

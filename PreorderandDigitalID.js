@@ -9,7 +9,7 @@ describe('PSC:', function() {
   const fs = require('fs'); 
 
   
-  it('psc url', function() {
+ /* it('psc url', function() {
 	  var EC = protractor.ExpectedConditions;
 
     obj.getURL();
@@ -18,7 +18,7 @@ describe('PSC:', function() {
   
   
   },500000);
-
+*/
  
   using(d.Datadrivendigitalid, function (data, description) {
 		 it("DigitalID and Preorder should be disabled for no patron and inactive patron" , function() {
