@@ -1,7 +1,7 @@
 const { browser } = require("protractor");
 
 describe('PSC:', function() {
-	var obj=  require("./Jsobjectdemo.js");
+	var obj=  require("./JsObjectpage.js");
   var using=  require("jasmine-data-provider");
   var d=  require("./data.js");
   var path = require("path");
@@ -9,7 +9,7 @@ describe('PSC:', function() {
   const fs = require('fs'); 
 
   
- /* it('psc url', function() {
+ it('psc url', function() {
 	  var EC = protractor.ExpectedConditions;
 
     obj.getURL();
@@ -18,7 +18,7 @@ describe('PSC:', function() {
   
   
   },500000);
-*/
+
  
   using(d.Datadrivendigitalid, function (data, description) {
 		 it("DigitalID and Preorder should be disabled for no patron and inactive patron" , function() {
@@ -26,7 +26,7 @@ describe('PSC:', function() {
 
                
                 var EC = protractor.ExpectedConditions;
-                browser.sleep(5000);
+                browser.sleep(10000);
 
               
                 obj.email1.sendKeys(data.email2);

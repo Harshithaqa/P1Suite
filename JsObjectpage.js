@@ -281,7 +281,7 @@ this.reload=element(by.xpath('//body/div[@id="root"]/div[1]/section[1]/div[1]/bu
 			//cart
 
 			this.clickoncart=element(by.className('custom-hide'));
-			this.clickonselect=element.all(by.className('mat-header-row ng-star-inserted')).all(by.tagName('mat-checkbox'));
+			this.clickonselect=element(by.xpath('/html[1]/body[1]/app-root[1]/app-full-layout[1]/app-cart[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[2]/div[1]/div[1]/div[1]/table[1]/thead[1]/tr[1]/th[1]/mat-checkbox[1]/label[1]/div[1]'));
 			this.continue=element(by.xpath('//button[contains(text(),"CONTINUE")]'));
 			this.paymentcheckbox=element(by.className('checkbox-display')).element(by.css('label:nth-child(1)'));
 			this.delete=element(by.xpath('/html[1]/body[1]/app-root[1]/app-full-layout[1]/app-cart[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[2]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[2]/td[7]/mat-icon[1]'));
@@ -289,7 +289,7 @@ this.reload=element(by.xpath('//body/div[@id="root"]/div[1]/section[1]/div[1]/bu
 			this.makepayment=element(by.buttonText('MAKE PAYMENT'));
 			this.selectall=element(by.xpath('//thead/tr[1]/th[1]/mat-checkbox[1]/label[1]/div[1]'));
 			this.paymentsel=element(by.xpath('//div[@class="mat-select-value"]'));
-			this.achcart=element(by.xpath('//span[contains(text()," TestACH ")]'));
+			this.achcart=element(by.xpath('//span[contains(text()," TestACh ")]'));
 			this.delall=element(by.xpath('/html[1]/body[1]/app-root[1]/app-full-layout[1]/app-cart[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[2]/div[1]/div[1]/h6[1]/span[1]/a[1]/mat-icon[1]'));
 			this.cartcheckboxtext=element(by.xpath('//body/ngb-modal-window[1]/div[1]/div[1]/app-cart-dialog[1]/div[1]/div[6]/div[2]'));
 			this.cartcheckbox=element(by.xpath('//body/ngb-modal-window[1]/div[1]/div[1]/app-cart-dialog[1]/div[1]/div[6]/div[1]/mat-checkbox[1]/label[1]/div[1]'));
@@ -298,6 +298,7 @@ this.reload=element(by.xpath('//body/div[@id="root"]/div[1]/section[1]/div[1]/bu
 			this.closepopup=element(by.xpath('//mat-icon[contains(text(),"cancel")]'))
 			this.noitemsincart=element(by.xpath('//div[contains(text(),"No items in Cart")]'));
 			//Meal functionality
+			this.addcart1=element(by.xpath('/html[1]/body[1]/app-root[1]/app-full-layout[1]/app-dashboard[1]/div[2]/div[2]/form[1]/div[1]/div[2]/app-meals[1]/div[2]/div[1]/table[1]/tbody[1]/tr[2]/td[3]/span[1]/mat-icon[1]'));
 
 			this.addcart=element(by.xpath('/html[1]/body[1]/app-root[1]/app-full-layout[1]/app-dashboard[1]/div[2]/div[2]/form[1]/div[1]/div[2]/app-meals[1]/div[2]/div[1]/table[1]/tbody[1]/tr[2]/td[4]/span[1]/mat-icon[1]'));
 			this.amount=element(by.xpath('//input[@name="Amount"]'));
@@ -323,7 +324,7 @@ this.reload=element(by.xpath('//body/div[@id="root"]/div[1]/section[1]/div[1]/bu
 			this.savebutton=element(by.buttonText('SAVE'));
 			this.result3=element(by.xpath('//h2[contains(text(),"Success")]'));
 			this.ok=element(by.buttonText('OK'));
-			this.manageauto1=element(by.xpath('/html[1]/body[1]/div[2]/div[2]/div[1]/div[1]/div[1]/button[1]'));
+			this.manageauto1=element(by.xpath('/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/button[1]'));
 			this.mealhistory=element(by.xpath('//body/div[2]/div[2]/div[1]/div[1]/div[1]/button[2]'));
 
 
@@ -348,7 +349,7 @@ this.reload=element(by.xpath('//body/div[@id="root"]/div[1]/section[1]/div[1]/bu
 			this.amountdue=element(by.xpath('//div[contains(text(),"$80.00")]'));
 			this.feedropdown=element(by.xpath('/html[1]/body[1]/app-root[1]/app-full-layout[1]/app-dashboard[1]/div[2]/div[3]/form[1]/div[1]/div[2]/app-fees[1]/mat-tab-group[1]/div[1]/mat-tab-body[1]/div[1]/div[1]/mat-form-field[1]/div[1]/div[1]/div[1]/mat-select[1]/div[1]/div[1]'));
 			this.selectscheduledfee=element(by.xpath('//span[contains(text(),"Scheduled Fees")]'));
-			this.feecartamount=element(by.xpath('/html[1]/body[1]/app-root[1]/app-full-layout[1]/app-cart[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[2]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[3]/td[5]'));
+			this.feecartamount=element(by.xpath('/html[1]/body[1]/app-root[1]/app-full-layout[1]/app-cart[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[2]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[2]/td[5]'));
 			this.ash=element(by.xpath('/html[1]/body[1]/app-root[1]/app-full-layout[1]/app-dashboard[1]/div[2]/div[1]/app-all-patrons[1]/div[1]/form[1]/div[1]/div[2]/mat-tab-group[1]/mat-tab-header[1]/div[2]/div[1]/div[1]/div[2]/div[1]/a[1]'));
 			this.feedrop=element(by.xpath('//span//mat-panel-title[contains(text(),"Fees")]'));
 			this.amountdue1=element(by.xpath('//div[contains(text(),"$100.00")]'));
@@ -406,12 +407,12 @@ this.reload=element(by.xpath('//body/div[@id="root"]/div[1]/section[1]/div[1]/bu
 
 			//charge
 
-			this.transactionalfee=element(by.xpath('//tr//td[contains(text(),"$2.00")]'));
-			this.icfee=element(by.xpath('//tr//td[contains(text(),"$5.00")]'));
+			this.transactionalfee=element(by.xpath('//tr//td[contains(text(),"$0.00")]'));
+			this.icfee=element(by.xpath('//tr//td[contains(text(),"$0.00")]'));
 			this.help1=element(by.xpath('//mat-icon[contains(text(),"help_outline")]'));
 			this.transactionalfee1=element(by.xpath('//tr//td[contains(text(),"$0.00")]'));
 			this.icfee1=element(by.xpath('//tr//td[contains(text(),"$0.00")]'));
-			this.cancel1=element(by.xpath('//a//mat-icon[contains(text(),"cancel")]'));
+			this.cancelicon=element(by.xpath('//a//mat-icon[contains(text(),"cancel")]'));
 
 
 			//your profile
@@ -559,7 +560,7 @@ this.reload=element(by.xpath('//body/div[@id="root"]/div[1]/section[1]/div[1]/bu
 			this.inactivestudent=element(by.xpath('//div//span//mat-icon[contains(text(),"brightness_1")]'));
 			this.remove=element(by.xpath('//div//span//mat-icon[contains(text(),"cancel")]'));
 			this.remove1=element(by.xpath('//button[contains(text(),"YES")]'));
-			this.removestu=element(by.xpath('//body/app-root[1]/app-full-layout[1]/app-add-patrons[1]/div[2]/form[1]/div[1]/div[2]/div[2]/div[2]/i[1]'));
+			this.removestu=element(by.xpath('//body/app-root[1]/app-full-layout[1]/app-add-patrons[1]/div[2]/form[1]/div[1]/div[2]/div[1]/div[2]/i[1]'));
 
 			this.Schoolname=element(by.xpath('//p[@class="school-name"]'));
 			this.districtname=element(by.xpath('//p[@class="district"]'));
@@ -718,6 +719,8 @@ this.logout=element(by.xpath('/html/body/div[1]/div[1]/div/div/div/div/div[3]/di
 this.noSSN=element(by.xpath('//body/app-root[1]/app-full-layout[1]/app-quik-apps[1]/app-sign-app[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[3]/div[4]/mat-checkbox[1]/label[1]/div[1]'));
 this.confirmpassword=element(by.xpath('/html[1]/body[1]/app-root[1]/app-full-layout[1]/app-quik-apps[1]/app-sign-app[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[3]/div[7]/mat-form-field[1]/div[1]/div[1]/div[1]/input[1]'));
 this.sign=element(by.xpath('//button[contains(text(),"SIGN")]'));
+this.menuicon=element(by.xpath('//app-header/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]/button[1]/span[1]/i[1]'));
+this.backtopscdashboard=element(by.xpath('//body/div[2]/div[2]/div[1]/div[1]/div[1]/button[2]'));
 
 
 

@@ -5,7 +5,7 @@ describe('PSCpageobjects', function() {
   var using=  require("jasmine-data-provider");
   var d=  require("./data.js");
   
-/*
+
   using(d.Datadrivend, function (data, description) {
     it("Should add and remove the payment methods successfully",async function() {
       obj.getURL();
@@ -21,11 +21,12 @@ browser.waitForAngularEnabled(false);
     await  obj.password.sendKeys(data.password1);
 
     await  obj.login.click();
-      
+       browser.sleep(10000);
 
       await obj.cancel.click();
           
-      
+      browser.sleep(8000);
+
       
         
       await  obj.addcart.click();
@@ -44,9 +45,9 @@ browser.waitForAngularEnabled(false);
       await obj.rtdbutton.click();
 
     },200000);
-});*/
+});
 
-
+/*
 using(d.Datadrivenmail, function (data, description) {
     it("Should navigate to account activation page", function() {
 	//it('TS-'+description, function() {
@@ -93,7 +94,7 @@ using(d.Datadrivenmail, function (data, description) {
 			},250000);
 
 
-        });
+        });*/
       });
 
 

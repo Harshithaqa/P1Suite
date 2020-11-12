@@ -10,7 +10,7 @@ module.exports=
 	Register:
 		{
 
-		newemail:"qa06@maildrop.cc",
+		newemail:"qa12@maildrop.cc",
 		fn:"revathi",
 		ln:"bm",
 		address1:"btm",
@@ -35,13 +35,13 @@ module.exports=
 
 	UserLogin:
 		{
-			id:"qa06",
+			id:"qa12",
 			id1:"xyk",
 			id2:"psctest4",
 
 			//emailid1:"psctest1@mailinaguerrillamailtor.com",
 			accountactivation:"Account Activation",
-			activationemailid:"qa06@maildrop.cc",
+			activationemailid:"qa12@maildrop.cc",
 				activationpassword:"Test@123",
 				activationconfirmationpassword:"Test@123",
 				Confirmmessage:"Successfully set password",
@@ -61,7 +61,7 @@ module.exports=
 		Secure:
 			{
 				//email:"pscautomation@mailinator.com",
-				email:"qa06@maildrop.cc",
+				email:"qa12@maildrop.cc",
 				password:"Test@123", 
 
 				Securepage:"Secure Your Account",
@@ -303,7 +303,7 @@ module.exports=
 			amountadd:"10",
 			amou1:"$ 10.00",
 			success1:"Success",	
-			incartfee:"In-Cart $ 250.00",
+			incartfee:"In-Cart $ 100.00",
 			amount2:"10",	
 			incartver:"In-Cart $ 10.00",
 
@@ -320,8 +320,8 @@ module.exports=
 		cartcharges:
 		{
 			amount01:"50",
-			transactionalfee:"$2.00",
-			icfee:"$5.00",
+			transactionalfee:"$0.00",
+			icfee:"$0.00",
 			transfee:"$0.00",
 			icfee2:"$0.00",
 		},
@@ -364,7 +364,7 @@ module.exports=
 
 	Paymenthistory:
 		{
-			emailf:"preordertest@mailinator.com",
+			emailf:"P3validation@mailinator.com",
 			//emailf:"psc2feeauto@mailinator.com",
 			passwordf:"Test@123",
 			optionfee:"Optional Fee",
@@ -374,7 +374,7 @@ module.exports=
 			fundamt1:"5",
 			result27:"No records found",
 			mealcartamount:"",
-			feecartamount:"$ 800.00",
+			feecartamount:"$ 100.00",
 
 
 		},

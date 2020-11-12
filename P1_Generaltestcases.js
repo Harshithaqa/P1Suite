@@ -14,6 +14,8 @@ describe('Protractor psc2', function() {
 
 using(d.Datadrivenw, function (data, description) {
 	it("Should update the notification changes successfully", function() {
+    obj.getURL();
+
 		browser.ignoreSynchronization = true;
     browser.waitForAngularEnabled(false);
 
@@ -26,10 +28,10 @@ using(d.Datadrivenw, function (data, description) {
 			 browser.sleep(25000);
 			 
     });
-    obj.cancel.click().then(function(){
+    /*obj.cancel.click().then(function(){
       browser.sleep(8000);
    
-       });
+       });*/
        
        //Notification
  obj.notification.click().then(function(){
@@ -425,10 +427,10 @@ using(d.Datadrivend, function (data, description) {
         
       
       
-            obj.cancel.click().then(function(){
-              browser.sleep(8000);
-            
-             });
+     /*obj.cancel.click().then(function(){
+      browser.sleep(8000);
+   
+       });*/
 
    obj.addcart.click().then(function(){
     browser.sleep(8000);
@@ -490,10 +492,10 @@ it("Should successfully update the meals data", function() {
 //browser.wait(EC.visibilityOf(obj.freeclose.click()), 9999);
 
 
-obj.cancel.click().then(function(){
-browser.sleep(8000);
-
-});
+ /*obj.cancel.click().then(function(){
+      browser.sleep(8000);
+   
+       });*/
 
 
 obj.mealmenu.click().then(function(){
@@ -573,11 +575,10 @@ obj.menudashboard.click().then(function(){
 using(d.Datadrivenfund, function (data, description) {
 it('Should successfully update the Fund data', function() {
 
-
-    obj.cancel.click().then(function(){
-        browser.sleep(8000);
-     
-       });
+ /*obj.cancel.click().then(function(){
+      browser.sleep(8000);
+   
+       });*/
   browser.executeScript('window.scrollTo(0,10000);').then(function (){
     obj.addfund.click().then(function(){
     browser.sleep(1000);
@@ -642,10 +643,10 @@ it('Should successfully update the Fund data', function() {
   
 
 
-obj.cancel.click().then(function(){
-  browser.sleep(8000);
-
-   });
+ /*obj.cancel.click().then(function(){
+      browser.sleep(8000);
+   
+       });*/
 
 browser.executeScript('window.scrollTo(0,10000);').then(function () {
 obj.fundtransfericon.click().then(function(){
@@ -741,10 +742,10 @@ obj.cancel.click().then(function(){
        browser.sleep(6000);
    });
 
-   obj.amount.sendKeys(data.amount21).then(function(){
-    browser.sleep(1000);
+   //obj.amount.sendKeys(data.amount21).then(function(){
+    //browser.sleep(1000);
     
-  });
+  //});
   obj.addfeetocart.click().then(function(){
     browser.sleep(4000);
   });
@@ -774,6 +775,10 @@ obj.paymentcheckbox.click().then(function(){
    browser.sleep(5000);
 });
 
+
+obj.cartcheckbox.click().then(function(){
+  browser.sleep(5000);
+  });
 obj.makepayment.click().then(function(){
  browser.sleep(8000);
 });
@@ -790,7 +795,7 @@ browser.sleep(8000);
 });
 
 obj.messages.click().then(function(){
-browser.sleep(5000);
+browser.sleep(10000);
 });
 
 
@@ -802,7 +807,7 @@ browser.sleep(6000);
 });
 
 obj.closepopup1.click().then(function(){
-browser.sleep(6000);
+browser.sleep(10000);
 
 });
 
