@@ -1,4 +1,4 @@
-describe('Protractor psc2', function() {
+describe('PSC P1testcases', function() {
 	var obj=  require("./JsObjectpage.js");
   var using=  require("jasmine-data-provider");
   var d=  require("./data.js");
@@ -13,19 +13,17 @@ using(d.Datadriven, function (data, description) {
     browser.ignoreSynchronization = true;
     browser.waitForAngularEnabled(false);
 
-	//	obj.getURL();
-		browser.sleep(4000);
+//		obj.getURL();
+		browser.sleep(10000);
 		
 		
-		obj.email.sendKeys(data.email);
+		obj.email.sendKeys(data.email1);
 	  obj.password.sendKeys(data.password2);
 	  obj.login.click().then(function(){
 			 browser.sleep(25000);
 			 
     });
-    obj.cancel.click().then(function(){
-      browser.sleep(8000);
-    });
+  
 
 
    //autoreplenishment
@@ -99,7 +97,7 @@ using(d.Datadriven, function (data, description) {
     
   
   browser.refresh();
-  browser.sleep(5000);
+  browser.sleep(8000);
   
   obj.accountdrop.click().then(function(){
     browser.sleep(5000);
@@ -198,11 +196,17 @@ using(d.Datadriven, function (data, description) {
         obj.daysdrop90.click().then(function(){
           browser.sleep(4000);
         });
-        obj.createpdfbuttonpay.click().then(function(){
+
+        obj.logoutbutton.click().then(function(){
+          browser.sleep(8000);
+          
+          });
+          
+      /*  obj.createpdfbuttonpay.click().then(function(){
           browser.sleep(4000);
         });
         obj.sendemail.click().then(function(){
-          browser.sleep(8000);
+          browser.sleep(10000);
         });
         obj.ok2.click().then(function(){
           browser.sleep(5000);
@@ -217,7 +221,7 @@ using(d.Datadriven, function (data, description) {
           browser.sleep(4000);
         });
         obj.sendemail.click().then(function(){
-          browser.sleep(8000);
+          browser.sleep(10000);
         });
         obj.ok2.click().then(function(){
           browser.sleep(4000);
@@ -238,11 +242,7 @@ using(d.Datadriven, function (data, description) {
            });
 */
 
-           obj.logoutbutton.click().then(function(){
-            browser.sleep(8000);
-            
-            });
-            
+           
   },2500000);
   
   

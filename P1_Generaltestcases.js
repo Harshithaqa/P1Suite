@@ -1,4 +1,4 @@
-describe('Protractor psc2', function() {
+describe('PSC P1testcases', function() {
 	var obj=  require("./JsObjectpage.js");
   var using=  require("jasmine-data-provider");
   var d=  require("./data.js");
@@ -212,12 +212,9 @@ obj.student.click().then(function(){
     // var EC2 = protractor.ExpectedConditions;
     //browser.wait(EC2.visibilityOf(obj.deletestudent, 9999));
   
-    obj.student.click().then(function(){
-      browser.sleep(5000);
-      
-      });
+   
 
-      obj.remove.click().then(function(){
+      obj.deletestudent.click().then(function(){
         browser.sleep(5000);
         });
         
@@ -446,7 +443,7 @@ obj.addtocartbutton.click().then(function(){
     
 });
 obj.clickoncart.click().then(function(){
-    browser.sleep(5000);
+    browser.sleep(8000);
     
 });
 
@@ -638,7 +635,7 @@ it('Should successfully update the Fund data', function() {
       
     
   obj.returntodashboardbutton.click().then(function(){
-    browser.sleep(8000);
+    browser.sleep(10000);
     });
   
 
@@ -649,6 +646,8 @@ it('Should successfully update the Fund data', function() {
        });*/
 
 browser.executeScript('window.scrollTo(0,10000);').then(function () {
+  browser.sleep(4000);
+
 obj.fundtransfericon.click().then(function(){
   browser.sleep(4000);
   
@@ -714,7 +713,7 @@ using(d.Datadriven, function (data, description) {
 it('Fees functionality', function() {
     browser.ignoreSynchronization = true;
    // obj.getURL();
-    browser.sleep(4000);
+    browser.sleep(15000);
     
     
     obj.email.sendKeys(data.email);
@@ -733,6 +732,7 @@ obj.cancel.click().then(function(){
 
  using(d.Datadrivenfee, function (data, description) {
     it('TS-'+description, function() {
+      browser.sleep(15000);
 
   obj.fees.click().then(function(){
     browser.sleep(5000);
@@ -857,10 +857,7 @@ using(d.Datadrivenmanagereports, function (data, description) {
             obj.selectmealactivityreport.click().then(function(){
               browser.sleep(3000);
               });
-             // var ECrep = protractor.ExpectedConditions;
-// Waits for the element with id 'myCheckbox' to be selected.
-//browser.wait(ECrep.elementToBeSelected($('selectstudent')), 9000);
-            //  browser.executeScript('window.scrollTo(0,0);').then(function () {
+             
               obj.selectstudent.click().then(function(){
                  browser.sleep(7000);
 
@@ -1071,22 +1068,22 @@ using(d.Datadrivenmanagereports, function (data, description) {
                           browser.sleep(4000);
                         });
                         obj.downloadnow1.click().then(function(){
-                          browser.sleep(6000);
+                          browser.sleep(8000);
                         }); 
-                        obj.rettodsh.click().then(function(){
+                      /*  obj.rettodsh.click().then(function(){
                           browser.sleep(15000);
                         });
               
-                        obj.cancel.click().then(function(){
+                       /* obj.cancel.click().then(function(){
                           browser.sleep(8000);
                        
-                           });
+                           });*/
                         obj.logoutbutton.click().then(function(){
                           browser.sleep(8000);
                           
                           });                        
                     });
-                },200000);
+                },500000);
             });
  
 

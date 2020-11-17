@@ -1,4 +1,4 @@
-describe('Protractor psc2', function() {
+describe('PSC P1testcases', function() {
 	var obj=  require("./JsObjectpage.js");
   var using=  require("jasmine-data-provider");
   var d=  require("./data.js");
@@ -13,7 +13,7 @@ describe('Protractor psc2', function() {
 
 		browser.ignoreSynchronization = true;
 
-		browser.sleep(4000);
+		browser.sleep(8000);
 		
 	obj.email.sendKeys(data.emailfd);
     obj.password.sendKeys(data.passwordfd).then(function(){
@@ -25,14 +25,11 @@ describe('Protractor psc2', function() {
 	
 	
     obj.login.click().then(function(){
-    	browser.sleep(25000);
+    	browser.sleep(15000);
 
 	});
 	
-		 obj.cancel.click().then(function(){
-		 browser.sleep(8000);
-				 
-			 });
+	
 
 
     expect(obj.rfd.getText()).toBe(data.rfd);
@@ -582,13 +579,7 @@ using(d.Datadriven11, function (data, description) {
 			});
 
 			
-			obj.cancel.click().then(function(){
-				browser.sleep(8000);
-				
-				
-			});
 
-			
 			obj.logoutbutton.click().then(function(){
 				browser.sleep(8000);
 				

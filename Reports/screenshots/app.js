@@ -271,44 +271,54 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
 
     var results = [
     {
-        "description": "Should add and remove the payment methods successfully|PSCpageobjects",
-        "passed": false,
+        "description": "Should add a meal item to cart|PSC Priority 3 testcases",
+        "passed": true,
         "pending": false,
         "os": "Windows",
-        "instanceId": 4356,
+        "instanceId": 10672,
         "browser": {
             "name": "chrome",
-            "version": "86.0.4240.193"
+            "version": "86.0.4240.198"
         },
-        "message": [
-            "Failed: No element found using locator: By(xpath, /html[1]/body[1]/app-root[1]/app-full-layout[1]/app-dashboard[1]/div[2]/div[2]/form[1]/div[1]/div[2]/app-meals[1]/div[2]/div[1]/table[1]/tbody[1]/tr[2]/td[4]/span[1]/mat-icon[1])"
-        ],
-        "trace": [
-            "NoSuchElementError: No element found using locator: By(xpath, /html[1]/body[1]/app-root[1]/app-full-layout[1]/app-dashboard[1]/div[2]/div[2]/form[1]/div[1]/div[2]/app-meals[1]/div[2]/div[1]/table[1]/tbody[1]/tr[2]/td[4]/span[1]/mat-icon[1])\n    at C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:814:27\n    at ManagedPromise.invokeCallback_ (C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27\n    at C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)Error\n    at ElementArrayFinder.applyAction_ (C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:459:27)\n    at ElementArrayFinder.<computed> [as click] (C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:91:29)\n    at ElementFinder.<computed> [as click] (C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:831:22)\n    at UserContext.<anonymous> (D:\\PSCfinal\\P1\\main\\email.js:32:26)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\nFrom: Task: Run it(\"Should add and remove the payment methods successfully\") in control flow\n    at UserContext.<anonymous> (C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasminewd2\\index.js:94:19)\n    at attempt (C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4297:26)\n    at QueueRunner.run (C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4217:20)\n    at runNext (C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4257:20)\n    at C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4264:13\n    at C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4172:9\n    at C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasminewd2\\index.js:64:48\n    at ControlFlow.emit (C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\events.js:62:21)\n    at ControlFlow.shutdown_ (C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2674:10)\n    at C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2599:53\nFrom asynchronous test: \nError\n    at D:\\PSCfinal\\P1\\main\\email.js:10:5\n    at D:\\PSCfinal\\P1\\main\\node_modules\\jasmine-data-provider\\src\\index.js:37:22\n    at Array.forEach (<anonymous>)\n    at D:\\PSCfinal\\P1\\main\\node_modules\\jasmine-data-provider\\src\\index.js:30:24\n    at Suite.<anonymous> (D:\\PSCfinal\\P1\\main\\email.js:9:3)\n    at addSpecsToSuite (C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:1107:25)\n    at Env.describe (C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:1074:7)\n    at describe (C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4399:18)\n    at Object.<anonymous> (D:\\PSCfinal\\P1\\main\\email.js:3:1)"
-        ],
+        "message": "Passed",
         "browserLogs": [
             {
                 "level": "SEVERE",
-                "message": "https://dev.payschoolscentral.com/ - Failed to find a valid digest in the 'integrity' attribute for resource 'https://www.googletagmanager.com/gtag/js?id=G-YKZL1DE587' with computed SHA-256 integrity 'E1tYoOB3CTMkHc/IvV6K+xebs3yQyoID936rOdT6lgw='. The resource has been blocked.",
-                "timestamp": 1605169205382,
+                "message": "https://dev.payschoolscentral.com/ - Failed to find a valid digest in the 'integrity' attribute for resource 'https://www.googletagmanager.com/gtag/js?id=G-YKZL1DE587' with computed SHA-256 integrity 'qSmeI90JLEjuX3nCwQtTPQ7O7btcE1d9hpXu4PT9Phs='. The resource has been blocked.",
+                "timestamp": 1605625090312,
                 "type": ""
             },
             {
                 "level": "SEVERE",
                 "message": "https://dev.payschoolscentral.com/%20https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js - Failed to load resource: the server responded with a status of 404 ()",
-                "timestamp": 1605169205420,
-                "type": ""
-            },
-            {
-                "level": "SEVERE",
-                "message": "https://dev.payschoolscentral.com/%20https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js - Failed to load resource: the server responded with a status of 404 ()",
-                "timestamp": 1605169207767,
+                "timestamp": 1605625090707,
                 "type": ""
             }
         ],
-        "screenShotFile": "001000c3-002f-00d7-008b-00cc0094004b.png",
-        "timestamp": 1605169199135,
-        "duration": 39648
+        "screenShotFile": "00a700fd-006b-004f-001b-00dc001300c0.png",
+        "timestamp": 1605625086153,
+        "duration": 112651
+    },
+    {
+        "description": "Should verify the successfully transaction for meal item|PSC Priority 3 testcases",
+        "passed": false,
+        "pending": false,
+        "os": "Windows",
+        "instanceId": 10672,
+        "browser": {
+            "name": "chrome",
+            "version": "86.0.4240.198"
+        },
+        "message": [
+            "Failed: No element found using locator: By(xpath, //body/div[@id=\"root\"]/div[1]/section[1]/div[2]/div[1]/div[1]/a[1])"
+        ],
+        "trace": [
+            "NoSuchElementError: No element found using locator: By(xpath, //body/div[@id=\"root\"]/div[1]/section[1]/div[2]/div[1]/div[1]/a[1])\n    at C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:814:27\n    at ManagedPromise.invokeCallback_ (C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27\n    at C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)Error\n    at ElementArrayFinder.applyAction_ (C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:459:27)\n    at ElementArrayFinder.<computed> [as click] (C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:91:29)\n    at ElementFinder.<computed> [as click] (C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:831:22)\n    at UserContext.<anonymous> (D:\\PSCfinal\\P1\\main\\P3_Email.js:95:29)\n    at C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasminewd2\\index.js:112:25\n    at new ManagedPromise (C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1077:7)\n    at ControlFlow.promise (C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2505:12)\n    at schedulerExecute (C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasminewd2\\index.js:95:18)\n    at TaskQueue.execute_ (C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\nFrom: Task: Run it(\"Should verify the successfully transaction for meal item\") in control flow\n    at UserContext.<anonymous> (C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasminewd2\\index.js:94:19)\n    at attempt (C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4297:26)\n    at QueueRunner.run (C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4217:20)\n    at runNext (C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4257:20)\n    at C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4264:13\n    at C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4172:9\n    at C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasminewd2\\index.js:64:48\n    at ControlFlow.emit (C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\events.js:62:21)\n    at ControlFlow.shutdown_ (C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2674:10)\n    at C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2599:53\nFrom asynchronous test: \nError\n    at D:\\PSCfinal\\P1\\main\\P3_Email.js:75:3\n    at D:\\PSCfinal\\P1\\main\\node_modules\\jasmine-data-provider\\src\\index.js:37:22\n    at Array.forEach (<anonymous>)\n    at D:\\PSCfinal\\P1\\main\\node_modules\\jasmine-data-provider\\src\\index.js:30:24\n    at Suite.<anonymous> (D:\\PSCfinal\\P1\\main\\P3_Email.js:74:1)\n    at addSpecsToSuite (C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:1107:25)\n    at Env.describe (C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:1074:7)\n    at describe (C:\\Users\\Harshitha TN\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4399:18)\n    at Object.<anonymous> (D:\\PSCfinal\\P1\\main\\P3_Email.js:1:1)"
+        ],
+        "browserLogs": [],
+        "screenShotFile": "00c30072-0059-000e-0003-0082005f002c.png",
+        "timestamp": 1605625199171,
+        "duration": 30059
     }
 ];
 

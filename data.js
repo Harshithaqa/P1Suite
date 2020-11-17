@@ -10,7 +10,7 @@ module.exports=
 	Register:
 		{
 
-		newemail:"qa12@maildrop.cc",
+		newemail:"qa15@maildrop.cc",
 		fn:"revathi",
 		ln:"bm",
 		address1:"btm",
@@ -35,13 +35,13 @@ module.exports=
 
 	UserLogin:
 		{
-			id:"qa12",
+			id:"qa15",
 			id1:"xyk",
 			id2:"psctest4",
 
 			//emailid1:"psctest1@mailinaguerrillamailtor.com",
 			accountactivation:"Account Activation",
-			activationemailid:"qa12@maildrop.cc",
+			activationemailid:"qa15@maildrop.cc",
 				activationpassword:"Test@123",
 				activationconfirmationpassword:"Test@123",
 				Confirmmessage:"Successfully set password",
@@ -61,7 +61,7 @@ module.exports=
 		Secure:
 			{
 				//email:"pscautomation@mailinator.com",
-				email:"qa12@maildrop.cc",
+				email:"qa15@maildrop.cc",
 				password:"Test@123", 
 
 				Securepage:"Secure Your Account",
@@ -195,6 +195,9 @@ module.exports=
 
 		UserLogin:
 			{
+
+				email1:"Testy@mailinator.com",
+
 				email:"xyk@guerrillamail.com",
 				//"pscautomation2@mailinator.com",
 				password2:"Test@123",
@@ -487,7 +490,7 @@ DigitalIDdata:
 
 			zerodollar:"$ 0.00",
 			reduced:"$ 0.40",
-			denied:"$ 3.00",
+			denied:"$ 2.80",
 
 			preordermeals:"Preorder Meal",
 			checkcart:"$0.00",
@@ -741,7 +744,7 @@ Datadrivene:
 		r5:"Invalid email address.",
 		r6:"First Name is required.",
 		r7:"Last Name is required.",
-		r8:"Address Line 1 is required.",
+		Addresserror:"Address Line 1 is required.",
 		r9:"Postal Code is required.",
 		r10:"City is required",
 		r11:"State is required.",

@@ -1,25 +1,23 @@
 const { browser } = require("protractor");
 
 
-describe('ReportTestSuite', function() {
+describe('PSC Priority 2 testcases', function() {
 	var obj=  require("./JsObjectpage.js");
   var using=  require("jasmine-data-provider");
   var d=  require("./data.js");
   
-  it('psc application', function() {
-    obj.getURL();
-   
-  },500000);
-
+ 
 
 //Payment History
+
 
   using(d.Datadrivenfee, function (data, description) {
     it('TS-'+description, function() {
 
-     
+      obj.getURL();
+      browser.sleep(10000);
+
       browser.waitForAngularEnabled(false);
-      browser.sleep(8000);
 
     	obj.email.sendKeys(data.emailf).then(function(){
         browser.sleep(2000);
@@ -39,7 +37,7 @@ describe('ReportTestSuite', function() {
          });
 
 //Meal History
-
+/*
 obj.addcart.click().then(function(){
   browser.sleep(5000);
   
@@ -126,20 +124,19 @@ expect(obj.mealcartamount.getText()).toBe(data.amou);
         });
        obj.cancel.click().then(function(){
             browser.sleep(10000);
-          });
+          });*/
         
       },200000);
     
     });
 
 
-
+/*
     //Fee history
 
     using(d.Datadrivenfee, function (data, description) {
       it('TS-'+description, function() {
     
-            browser.sleep(10000);
 
 
       obj.fees.click().then(function(){
@@ -177,7 +174,7 @@ expect(obj.mealcartamount.getText()).toBe(data.amou);
       browser.sleep(8000);
     
     });*/
-    
+    /*
     obj.continue.click().then(function(){
        browser.sleep(2000);
     });
@@ -224,8 +221,23 @@ expect(obj.mealcartamount.getText()).toBe(data.amou);
     console.log(text);
     browser.sleep(1000);
     
-    browser.refresh();
+    });
+    
+
+    obj.menudashboard.click().then(function(){
+      browser.sleep(10000);
+
+     });
+
+        
+    obj.cancel.click().then(function(){
+      browser.sleep(8000);
+
+     });
+
+  /*  browser.refresh();
   
+    browser.sleep(8000);
 
         obj.typesel.click().then(function(){
           browser.sleep(2000);
@@ -257,56 +269,13 @@ expect(obj.mealcartamount.getText()).toBe(data.amou);
   console.log(text);
   browser.sleep(1000);
   
+  });*/
+   /* },2500000);
   });
-    },2500000);
-  });
-
-  using(d.Datadrivenw, function (data, description) {
-        it('TS-'+description, function() {
-
- 
-  obj.profile.click().then(function(){
-                    browser.sleep(5000);
-             
-                    obj.firstnm.sendKeys(data.firstnm);
-                    obj.pinc.clear();
-                    obj.pinc.sendKeys(data.pinc);
-                    browser.sleep(5000);
-                });
-     obj.update.click().then(function(){
-        browser.sleep(5000);
-        
-        });
-      expect(obj.successmessage.getText()).toBe(data.respr);
-      obj.successmessage.getText().then(function(text){
-      console.log(text);
-      browser.sleep(9000);
-      
-      });
-         /*      obj.logoutbutton.click().then(function(){
-          browser.sleep(7000);
-          });  */
-
-           
-    obj.menudashboard.click().then(function(){
-      browser.sleep(10000);
-
-     });
-
-        
-    obj.cancel.click().then(function(){
-      browser.sleep(10000);
-
-     });
-
-              },200000);
-  
-
-    });
+ 
 
     using(d.Datadrivenspecificstudent, function (data, description) {
         it('TS-'+description, function() {
-          browser.sleep(8000);
 
    /* obj.email.sendKeys(data.emailf).then(function(){
       browser.sleep(2000);
@@ -323,13 +292,13 @@ expect(obj.mealcartamount.getText()).toBe(data.amou);
 
 */
 
-
+/*
          obj.ash.click().then(function(){
 
             browser.sleep(15000);
    });
    
-         obj.addcart.click().then(function(){
+         obj.addcart1.click().then(function(){
 
             browser.sleep(6000);
    });
@@ -383,6 +352,10 @@ obj.returntodashboardbutton.click().then(function(){
   browser.sleep(9000);
 });
 
+  obj.cancel.click().then(function(){
+      browser.sleep(8000);
+    });
+  
       obj.paymenthistory.click().then(function(){
       browser.sleep(3000);
       });
@@ -416,13 +389,14 @@ obj.returntodashboardbutton.click().then(function(){
     
     });
     
-      obj.returntodashboard.click().then(function(){
-          browser.sleep(8000);
+      obj.menudashboard.click().then(function(){
+          browser.sleep(10000);
         });
 
       obj.cancel.click().then(function(){
-            browser.sleep(8000);
+            browser.sleep(15000);
           });
+
           obj.fees.click().then(function(){
     browser.sleep(5000);
    });
@@ -434,8 +408,8 @@ obj.returntodashboardbutton.click().then(function(){
     browser.sleep(4000);
    });
 
-   obj.ash.click().then(function(){
-    browser.sleep(8000);
+   obj.Cole.click().then(function(){
+    browser.sleep(15000);
 });
 
  obj.fees.click().then(function(){
@@ -458,8 +432,9 @@ expect(obj.incartfee.getText()).toBe(data.incartfee);
      obj.amount.clear();
 
      obj.amount.sendKeys(data.amount2);
+     browser.sleep(2000);
 
-     obj.addtocart.click().then(function(){
+     obj.addtocartbutton.click().then(function(){
 
         browser.sleep(4000);
      });
@@ -468,9 +443,12 @@ expect(obj.incartfee.getText()).toBe(data.incartfee);
         browser.sleep(8000);
      });
     
+     obj.cancel.click().then(function(){
 
+      browser.sleep(15000);
+   });
      obj.fees.click().then(function(){
-        browser.sleep(5000);
+        browser.sleep(8000);
        });
        expect(obj.incartver.getText()).toBe(data.incartver);
        obj.incartver.getText().then(function(text){
@@ -497,22 +475,32 @@ expect(obj.incartfee.getText()).toBe(data.incartfee);
         browser.sleep(4000);
   });
   
-    },200000);
-});
+  obj.menudashboard.click().then(function(){
 
+    browser.sleep(8000);
+ });
+
+ obj.cancel.click().then(function(){
+
+  browser.sleep(15000);
+});
+    },2000000);
+});
+*/
 
 using(d.Datadrivenspecificstudent, function (data, description) {
 it('TS-'+description, function() {
 
   
+  browser.sleep(15000);
 
-obj.ash.click().then(function(){
+obj.Cole.click().then(function(){
 
-  browser.sleep(9000);
+  browser.sleep(15000);
  });
 
  obj.fees.click().then(function(){
-  browser.sleep(5000);
+  browser.sleep(8000);
 });
 
  obj.schedulefee.click().then(function(){
@@ -618,52 +606,22 @@ obj.ash.click().then(function(){
         browser.sleep(8000);
       });
   
-    expect(obj.amountdue1.getText()).toBe(data.amountdue1);
+    expect(obj.amountdue1.getText()).toContains(data.amountdue1);
       obj.amountdue1.getText().then(function(text){
       console.log(text);
       browser.sleep(3000);
       
       });
      
+      obj.logoutbutton.click().then(function(){
+        browser.sleep(8000);
+      });
+  
 
 
     },200000);
-  });
 
 });
-
-  
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

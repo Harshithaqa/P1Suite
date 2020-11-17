@@ -61,13 +61,13 @@ this.reload=element(by.xpath('//body/div[@id="root"]/div[1]/section[1]/div[1]/bu
 			this.rtl=element(by.xpath('//button[@class="btn btn-white"]")]'));
 			this.resultUS=element(by.xpath('//h2[contains(text(),"Registration Success")]'));
 			this.useralreadyexists=element(by.xpath('//span[contains(text(),"The registration was unsuccessful due to - User al")]'));
-			this.r5=element(by.xpath('//div//mat-error[contains(text()," Invalid email address.")]'));
-			this.r6=element(by.xpath('//div//mat-error[contains(text()," First Name is required.")]'));
-			this.r7=element(by.xpath('//div//mat-error[contains(text()," Last Name is required.")]'));
-			this.r8=element(by.xpath('//div//mat-error[contains(text()," Address Line 1 is required.")]'));
-			this.r9=element(by.xpath('//div//mat-error[contains(text()," Postal Code is required. ")]'));
-			this.r10=element(by.xpath('//div//mat-error[contains(text()," City is required")]'));
-			this.r11=element(by.xpath('//div//mat-error[contains(text()," State is required")]'));
+			this.invalidemailid=element(by.xpath('//div//mat-error[contains(text()," Invalid email address.")]'));
+			this.FNrequired=element(by.xpath('//div//mat-error[contains(text()," First Name is required.")]'));
+			this.LNrequired=element(by.xpath('//div//mat-error[contains(text()," Last Name is required.")]'));
+			this.Addressrequired=element(by.xpath('//div//mat-error[contains(text()," Address Line 1 is required.")]'));
+			this.Postalcoderequired=element(by.xpath('//div//mat-error[contains(text()," Postal Code is required. ")]'));
+			this.Cityrequired=element(by.xpath('//div//mat-error[contains(text()," City is required")]'));
+			this.Staterequired=element(by.xpath('//div//mat-error[contains(text()," State is required")]'));
 
 			this.r12=element(by.xpath('/html[1]/body[1]/div[3]/div[1]/div[1]/snack-bar-container[1]/simple-snack-bar[1]/span[1]'));
 
@@ -108,14 +108,14 @@ this.reload=element(by.xpath('//body/div[@id="root"]/div[1]/section[1]/div[1]/bu
 			this.logoutbutton=element(by.xpath('//span[contains(text(),"Logout")]'));
 			this.rtdbutton=element(by.xpath('/html[1]/body[1]/ngb-modal-window[1]/div[1]/div[1]/app-checkout-messages[1]/div[1]/div[2]/div[1]/button[1]'));
 			this.warningpopup=element(by.xpath('/html[1]/body[1]/ngb-modal-window[1]/div[1]/div[1]/app-common-dialog[1]/div[1]/p[1]'));
-			this.cancelbutton=element(by.xpath('//mat-icon[contains(text(),"cancel")]'));
+			this.cancelbutton1=element(by.xpath('//mat-icon[contains(text(),"cancel")]'));
 			this.continuebutton=element(by.xpath('//button[contains(text(),"Continue")]'));
 			this.forwardbutton=element(by.xpath('/html[1]/body[1]/app-root[1]/app-full-layout[1]/app-dashboard[1]/div[2]/div[1]/app-all-patrons[1]/div[1]/form[1]/div[1]/div[2]/mat-tab-group[1]/mat-tab-header[1]/div[3]/div[1]'));
 			this.menu=element(by.xpath('//app-header/div[1]/div[1]/div[1]/div[1]/app-side-menu[1]/div[1]/div[1]/button[1]/span[1]/i[1]'));
-			this.r1=element(by.xpath('//div//mat-error[contains(text()," Invalid email address.")]'));
-			this.r2=element(by.xpath('//div//mat-error[contains(text()," Password is required")]'));
-			this.r3=element(by.xpath('//span[contains(text(),"We are sorry, either your Email address or password is invalid.")]'));
-			this.r4=element(by.xpath('//span[contains(text(),"We are sorry, either your Email address or password is invalid.")]'));
+			this.invalidemailaddress=element(by.xpath('//div//mat-error[contains(text()," Invalid email address.")]'));
+			this.invalidpassword=element(by.xpath('//div//mat-error[contains(text()," Password is required")]'));
+			this.invalidemailandpassowrd=element(by.xpath('//span[contains(text(),"We are sorry, either your Email address or password is invalid.")]'));
+			this.invalidemail=element(by.xpath('//span[contains(text(),"We are sorry, either your Email address or password is invalid.")]'));
 
 			//forgot password
 			this.forpass=element(by.xpath('//a//p[contains(text(),"I forgot my password")]'));
@@ -157,7 +157,7 @@ this.reload=element(by.xpath('//body/div[@id="root"]/div[1]/section[1]/div[1]/bu
 				this.addstudent=element(by.buttonText('Add Student / Staff'));
 				this.state=element(by.name('IntStateId'));
 				this.selectstate=element(by.className('cdk-overlay-pane')).element(by.css('mat-option:nth-child(1)'));
-				this.district=element(by.xpath('//span[contains(text(),"District")]'));
+				this.district=element(by.xpath('//body/app-root[1]/app-full-layout[1]/app-add-patrons[1]/div[2]/form[1]/div[1]/div[2]/div[2]/mat-form-field[2]/div[1]/div[1]/div[1]'));
 				this.districtsaugus=element(by.xpath('//span[contains(text(),"Saugus")]'));
 				this.districtsulphur=element(by.xpath('//span[contains(text(),"Sulphur")]'));
 				this.studentid=element(by.name('PatronId'));
@@ -168,7 +168,7 @@ this.reload=element(by.xpath('//body/div[@id="root"]/div[1]/section[1]/div[1]/bu
 				this.studentbutton=element(by.xpath('//button[@class="btn btn-primary mt-4"]'));
 				this.success=element(by.xpath('//span[contains(text(),"Student successfully added.")]'));
 				this.continue2=element(by.xpath('//button[contains(text(),"Continue")]'));
-				this.deletestudent=element(by.xpath('//body/app-root[1]/app-full-layout[1]/app-add-patrons[1]/div[2]/form[1]/div[1]/div[2]/div[1]/div[2]/i[1]'));
+				this.deletestudent=element(by.xpath('//body/app-root[1]/app-full-layout[1]/app-add-patrons[1]/div[2]/form[1]/div[1]/div[2]/div[2]/div[2]/i[1]'));
 				this.removepopup=element(by.xpath('//h2[contains(text(),"Remove Student or Staff")]'));
 				this.viewpageremove=element(by.xpath('//div//span//mat-icon[contains(text(),"cancel")]'));
 				this.yes=element(by.xpath('/html[1]/body[1]/ngb-modal-window[1]/div[1]/div[1]/app-remove-dialog[1]/div[1]/div[2]/div[1]/button[1]'));
@@ -240,7 +240,7 @@ this.reload=element(by.xpath('//body/div[@id="root"]/div[1]/section[1]/div[1]/bu
 		
 			this.returntodashboardbutton=element(by.xpath('//button[contains(text(),"Return To Dashboard")]'));
 
-		
+			this.newcardname=element(by.xpath('//body/app-root[1]/app-full-layout[1]/app-view-payment-methods[1]/div[2]/div[1]/div[2]/div[2]/div[2]/div[1]/div[2]/div[2]/p[1]'));
 
 
 
@@ -336,12 +336,14 @@ this.reload=element(by.xpath('//body/div[@id="root"]/div[1]/section[1]/div[1]/bu
 
 			this.addfeetocart=element(by.className('btn btn-orange'));
 			this.optionfee=element(by.xpath('(//*[@class="mat-row ng-star-inserted"])[2]')).element(by.css('td:nth-child(3)'));
-			this.incartfee=element(by.xpath('//div//p[contains(text()," In-Cart $ 250.00")]'));
+			this.incartfee=element(by.xpath('//div//p[contains(text()," In-Cart $ 100.00")]'));
 			this.incartver=element(by.xpath('//p[contains(text()," In-Cart $ 10.00")]'));
-			this.schedulefee=element(by.xpath('//mat-tab-body/div[1]/div[1]/div[2]/mat-accordion[1]/mat-expansion-panel[1]/div[1]/div[1]/div[1]/div[2]/div[5]/span[3]/mat-icon[1]'));
+			this.schedulefee1=element(by.xpath('//mat-tab-body/div[1]/div[1]/div[2]/mat-accordion[1]/mat-expansion-panel[1]/div[1]/div[1]/div[1]/div[2]/div[5]/span[3]/mat-icon[1]'));
+
+			this.schedulefee=element(by.xpath('//mat-tab-body/div[1]/div[1]/div[2]/mat-accordion[1]/mat-expansion-panel[1]/div[1]/div[1]/div[1]/div[2]/div[4]/span[3]/mat-icon[1]'));
 			this.firsttinstallment=element(by.xpath('/html[1]/body[1]/app-root[1]/app-full-layout[1]/app-dashboard[1]/div[2]/div[3]/form[1]/div[1]/div[2]/app-fees[1]/mat-tab-group[1]/div[1]/mat-tab-body[2]/div[1]/div[1]/mat-accordion[1]/mat-expansion-panel[1]/div[1]/div[1]/form[1]/div[1]/mat-form-field[1]/div[1]/div[1]/div[1]/input[1]'));
 			this.paymentdate=element(by.xpath('/html[1]/body[1]/app-root[1]/app-full-layout[1]/app-dashboard[1]/div[2]/div[3]/form[1]/div[1]/div[2]/app-fees[1]/mat-tab-group[1]/div[1]/mat-tab-body[2]/div[1]/div[1]/mat-accordion[1]/mat-expansion-panel[1]/div[1]/div[1]/form[1]/div[1]/mat-form-field[2]/div[1]/div[1]/div[2]/mat-datepicker-toggle[1]/button[1]'));
-			this.selectdate=element(by.xpath('//div[contains(text(),"31")]'));
+			this.selectdate=element(by.xpath('//div[contains(text(),"30")]'));
 			this.back=element(by.xpath('//button[contains(text(),"Back")]'));
 			this.addschedule=element(by.xpath('//button[contains(text(),"Add/Update Schedule")]'));
 			this.cartschedule=element(by.xpath('/html[1]/body[1]/app-root[1]/app-full-layout[1]/app-dashboard[1]/div[2]/div[3]/form[1]/div[1]/div[2]/app-fees[1]/mat-tab-group[1]/div[1]/mat-tab-body[1]/div[1]/div[1]/div[2]/mat-accordion[1]/mat-expansion-panel[1]/div[1]/div[1]/div[1]/div[2]/div[4]/span[1]/mat-icon[1]'));
@@ -359,14 +361,15 @@ this.reload=element(by.xpath('//body/div[@id="root"]/div[1]/section[1]/div[1]/bu
 			this.checkboxfee=element(by.xpath('//tbody/tr[3]/td[1]/mat-checkbox[1]/label[1]/div[1]'));
 			this.deletefee=element(by.xpath('//tbody/tr[3]/td[7]/mat-icon[1]'));
 			this.scheduledfee=element(by.xpath('//div//div[contains(text(),"Sports fee")]'));
-			this.selectinactivestu=element(by.xpath('//mat-tab-header/div[2]/div[1]/div[1]/div[4]/div[1]/a[1]'));
+			this.selectinactivestu=element(by.xpath('//mat-tab-header/div[2]/div[1]/div[1]/div[5]/div[1]/a[1]'));
 			this.nofeestodisplay=element(by.xpath('//div[contains(text(),"No Fees to display")]'));
+			this.Cole=element(by.xpath('/html[1]/body[1]/app-root[1]/app-full-layout[1]/app-dashboard[1]/div[2]/div[1]/app-all-patrons[1]/div[1]/form[1]/div[1]/div[2]/mat-tab-group[1]/mat-tab-header[1]/div[2]/div[1]/div[1]/div[3]/div[1]/a[1]'));
 
 
 
 
 			//Fund
-			this.selectastudent=element(by.xpath('//mat-tab-header/div[2]/div[1]/div[1]/div[2]/div[1]/a[1]'));
+			this.selectastudent=element(by.xpath('//mat-tab-header/div[2]/div[1]/div[1]/div[5]/div[1]/a[1]'));
 			this.allstudent=element(by.xpath('//mat-tab-header/div[2]/div[1]/div[1]/div[1]/div[1]/a[1]'));
 			this.inactivestu=element(by.xpath('//select//option[contains(text(),"Cole Johnson")]'));
 			this.activestu=element(by.xpath('//option[contains(text(),"Jack Johnson")]'));
@@ -609,18 +612,18 @@ this.reload=element(by.xpath('//body/div[@id="root"]/div[1]/section[1]/div[1]/bu
 
 			this.checkcart=element(by.xpath('//span[@class="custom-hide"]'));
 			this.details=element(by.xpath('/html[1]/body[1]/form[1]/div[3]/div[1]/div[2]/section[1]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[3]/td[6]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[1]/input[1]'));
-			this.details1=element(by.xpath('/html[1]/body[1]/form[1]/div[3]/div[1]/div[2]/section[1]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[9]/td[6]/div[1]/div[1]/div[2]/div[1]/div[1]/span[1]/div[1]/div[1]/input[1]'));
-			this.details2=element(by.xpath('/html[1]/body[1]/form[1]/div[3]/div[1]/div[2]/section[1]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[6]/td[6]/div[1]/div[1]/div[2]/div[1]/div[1]/span[1]/div[1]/div[1]/input[1]'));
+			this.details1=element(by.xpath('/html[1]/body[1]/form[1]/div[3]/div[1]/div[2]/section[1]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[8]/td[6]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[1]/input[1]'));
+			this.details2=element(by.xpath('/html[1]/body[1]/form[1]/div[3]/div[1]/div[2]/section[1]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[13]/td[6]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[1]/input[1]'));
 
-			this.details3=element(by.xpath('/html[1]/body[1]/form[1]/div[3]/div[1]/div[2]/section[1]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[4]/td[6]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[1]/input[1]'));
+			this.details3=element(by.xpath('/html[1]/body[1]/form[1]/div[3]/div[1]/div[2]/section[1]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[9]/td[6]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[1]/input[1]'));
 			this.addon=element(by.xpath('//body/div[5]/div[2]/div[4]/div[1]/div[2]/div[1]/input[1]'));
 			this.addtocart=element(by.xpath('/html[1]/body[1]/div[5]/div[2]/input[2]'));
 
-			this.details4=element(by.xpath('/html[1]/body[1]/form[1]/div[3]/div[1]/div[2]/section[1]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[4]/td[6]/div[1]/div[1]/div[2]/div[1]/div[1]/span[1]/div[1]/div[1]/input[1]'));
+			this.details4=element(by.xpath('/html[1]/body[1]/form[1]/div[3]/div[1]/div[2]/section[1]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[10]/td[6]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[1]/input[1]'));
 
-			this.details5=element(by.xpath('/html[1]/body[1]/form[1]/div[3]/div[1]/div[2]/section[1]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[5]/td[6]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[1]/input[1]'));
+			this.details5=element(by.xpath('/html[1]/body[1]/form[1]/div[3]/div[1]/div[2]/section[1]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[11]/td[6]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[1]/input[1]'));
 
-			this.details6=element(by.xpath('/html[1]/body[1]/form[1]/div[3]/div[1]/div[2]/section[1]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[7]/td[6]/div[1]/div[1]/div[2]/div[1]/div[1]/span[1]/div[1]/div[1]/input[1]'));
+			this.details6=element(by.xpath('/html[1]/body[1]/form[1]/div[3]/div[1]/div[2]/section[1]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[11]/td[6]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[1]/input[1]'));
 
 			this.okbutton=element(by.xpath('//input[@id="btnAgree"]'));
 

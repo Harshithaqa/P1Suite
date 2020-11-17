@@ -1,14 +1,10 @@
 const { browser } = require("protractor");
 
- describe('Priority 2 testcases', function() {
+ describe('PSC Priority 2 testcases', function() {
 	var obj=  require("./JsObjectpage.js");
   var using=  require("jasmine-data-provider");
   var d=  require("./data.js");
   
-  it('psc url', function() {
-    obj.getURL();
-   
-  },500000);
  
   
   //test2 - add student
@@ -77,7 +73,7 @@ const { browser } = require("protractor");
   });
      
     
-    },200000);
+    },250000);
     
      
      });  
@@ -473,7 +469,7 @@ obj.autosuccess.getText().then(function(text){
                      
 
                      browser.executeScript('window.scrollTo(0,10000);').then(function (){
-                      browser.sleep(5000);
+                      browser.sleep(6000);
 
     obj.addfund.click().then(function(){
     browser.sleep(8000);
@@ -822,14 +818,7 @@ expect(obj.fundcartamount.getText()).toBe(data.fundcartamount);
                                       obj.downloadnow1.click().then(function(){
                                         browser.sleep(6000);
                                       }); 
-                                      obj.rettodsh.click().then(function(){
-                                        browser.sleep(15000);
-                                      });
-                            
-                                      obj.cancel.click().then(function(){
-                                        browser.sleep(8000);
-                                     
-                                         });
+                                    
                         
        
   
@@ -935,29 +924,22 @@ expect(obj.fundcartamount.getText()).toBe(data.fundcartamount);
              
              });
       
-             obj.cancel1.click().then(function(){
+             obj.cancelicon.click().then(function(){
             browser.sleep(5000);
             });
             //obj.selectall.click().then(function(){
             //browser.sleep(4000);
             //});
+            
             obj.delall.click().then(function(){
             browser.sleep(5000);
             });
             obj.yes.click().then(function(){
-            browser.sleep(5000);
+            browser.sleep(8000);
             });
       
-            obj.menudashboard.click().then(function(){
-            browser.sleep(5000);
-            });
-      
-            obj.cancel.click().then(function(){
-              browser.sleep(10000);
-              });
-
             obj.logoutbutton.click().then(function(){
-                browser.sleep(7000);
+                browser.sleep(8000);
                 });  
       
             },200000);

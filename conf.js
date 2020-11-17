@@ -11,11 +11,13 @@ exports.config = {
 // seleniumAddress: 'http://localhost:4444/wd/hub',
  //direct connect
 
- 
+ //specs: ['P3_Email.js'],
+
 
  //specs: ['PSC.NewUserLogin.js','PSC.ExistingUser.js','autoreplenishment.js','quikapps.js'],
- specs: ['P1_Generaltestcases.js','P1_Autoreplenishment.js','P1_Quikapps.js','P2_Generaltestcases.js',],
- //specs: ['email.js'],
+//specs: ['P1_Generaltestcases.js','P1_Autoreplenishment.js','P1_Quikapps.js','P2_Generaltestcases.js',],
+
+ specs: ['P1_Generaltestcases.js','P1_Autoreplenishment.js','P1_Quikapps.js','P2_Generaltestcases.js','P2_Reports.js','P3_GeneralTestcases.js','P3_NewCardTransaction.js','P3_ScheduledFee.js','P3_Email.js','P1_Registration.js'],
  chromeDriver : './node_modules/webdriver-manager/SeleniumSoftware/chromedriver.exe',
  seleniumServerJar: './node_modules/webdriver-manager/SeleniumSoftware/selenium-server-standalone-3.141.59.jar',
  capabilities : {
@@ -44,7 +46,7 @@ exports.config = {
 	 },
 
 	 jasmineNodeOpts: {
-		defaultTimeoutInterval: 2600000,
+		defaultTimeoutInterval: 26000000,
 		},	
   
   

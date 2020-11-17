@@ -9,7 +9,7 @@ describe('PSC:', function() {
   const fs = require('fs'); 
 
   
- it('psc url', function() {
+  it('psc url', function() {
 	  var EC = protractor.ExpectedConditions;
 
     obj.getURL();
@@ -22,158 +22,140 @@ describe('PSC:', function() {
  
   using(d.Datadrivendigitalid, function (data, description) {
 		 it("DigitalID and Preorder should be disabled for no patron and inactive patron" , function() {
+      browser.sleep(5000);
+
                   browser.waitForAngularEnabled(false);
 
                
                 var EC = protractor.ExpectedConditions;
-                browser.sleep(10000);
 
               
-                obj.email1.sendKeys(data.email2);
+                obj.email.sendKeys(data.email2);
                 //console.log(data.email[i]);
-                obj.password1.sendKeys(data.password2);
-                obj.login4.click().then(function(){
+                obj.password.sendKeys(data.password2);
+                obj.login.click().then(function(){
                     browser.sleep(25000);
                 });
 
+       
                 obj.nostudent.getText().then(function(text){
-                    if(text==='Click Here'){
-                    expect(obj.digital.isEnabled()).toBe(true).then(function(){
-                      console.log("Digital ID is disabled for no patrons");
-                  
-                    });
-                
-                    expect((obj.preorder).isPresent()).toBe(false);
-
-      }
-       else
-       console.log("Digital ID is enabled for no patrons");
-
-
-});
-
-    //expect(obj.digital.isEnabled()).toBe(true).then(function(){
-      //console.log("Digital ID is disabled for no patrons");
-  
-    //});
-    //expect((obj.preorder).isPresent()).toBe(false);
-  
-  
-  obj.student1.click().then(function(){
-  browser.sleep(5000);
-  
-  });
-  obj.addstudent1.click().then(function(){
-  browser.sleep(2000);
-  
-  });
-  obj.state.click().then(function(){
-  browser.sleep(5000);
-  
-  });
-  obj.selectstate.click().then(function(){
-  browser.sleep(5000);
-  
-  });
-  obj.district1.click().then(function(){
-    browser.sleep(5000);
-  
-  });
-  obj.districtselect1.click().then(function(){
-    browser.sleep(5000);
-  
-  });
-  
-  obj.studentid.sendKeys(data.studentid).then(function(){
-    browser.sleep(1000);
-  
-  });
-  obj.fname.sendKeys(data.fname).then(function(){
-    browser.sleep(1000);
-  
-  });
-  obj.lname.sendKeys(data.lname).then(function(){
-    browser.sleep(1000);
-  
-  });
-  obj.relation.click().then(function(){
-  browser.sleep(2000);
-  });
-  obj.relationselect.click().then(function(){
-  browser.sleep(2000);
-  });
-  obj.studentbutton.click().then(function(){
-  browser.sleep(5000);
-  });
-
-  obj.student1.click().then(function(){
-    browser.sleep(5000);
-    
-    });
-
-  //  expect(obj.inactivestudent.getCssValue("color")).toEqual('rgba(169, 68, 66, 1)').then(function(){
-    //  console.log("Digital ID is disabled for inactive patrons");
-
-//});
-
-
-
-   //expect(obj.digital.isEnabled()).toBe(true).then(function(){
-     // console.log("Digital ID is disabled for inactive patrons");
-    
-   // });
-
-    obj.inactivestudent.getCssValue('color').then(function(color){
-      if(color=="rgba(169, 68, 66, 1)"){
-    
-          expect(obj.digital.isEnabled()).toBe(true).then(function(){
-            console.log("Digital ID is disabled for inactive patrons");
-          
-          });
-        expect((obj.preorder).isPresent()).toBe(true);
-        
-      }
-       else
-       {
-       console.log("Digital ID is enabled for inactive patrons");
-    
-       }
-});
-
- 
-  //expect((obj.preorder).isPresent()).toBe(true);
-  
-  obj.remove.click().then(function(){
-    browser.sleep(5000);
-    });
-    obj.remove1.click().then(function(){
-      browser.sleep(5000);
-      });
-  
-  
-        obj.logoutbutton1.click().then(function(){	   
-          browser.sleep(5000);
-      });
-  
-    },2500000);
-  
-  });
-  
+                  if(text==='Click Here'){
+                      expect(obj.digital.isEnabled()).toBe(true).then(function(){
+                         console.log("Digital ID is disabled for no patrons");
+                       
+                       });
+                     
+                       expect((obj.preorder).isPresent()).toBe(false);
+     
+                   }
+                   else
+                  console.log("Digital ID is enabled for no patrons");
+     
+     
+               });
+     
+               obj.student.click().then(function(){
+                browser.sleep(5000);
+               
+               });
+               obj.addstudent.click().then(function(){
+                browser.sleep(2000);
+               
+               });
+               obj.state.click().then(function(){
+                 browser.sleep(5000);
+               
+               });
+               obj.selectstate.click().then(function(){
+                browser.sleep(5000);
+               
+               });
+               obj.district.click().then(function(){
+                 browser.sleep(5000);
+               
+               });
+               obj.districtsaugus.click().then(function(){
+                 browser.sleep(5000);
+               
+               });
+               
+               obj.studentid.sendKeys(data.studentid).then(function(){
+                 browser.sleep(2000);
+               
+               });
+               obj.fname.sendKeys(data.fname).then(function(){
+                 browser.sleep(2000);
+               
+               });
+               obj.lname.sendKeys(data.lname).then(function(){
+                 browser.sleep(2000);
+               
+               });
+               obj.relation.click().then(function(){
+                browser.sleep(2000);
+               });
+               obj.relationselect.click().then(function(){
+                browser.sleep(2000);
+               });
+               obj.studentbutton.click().then(function(){
+                 browser.sleep(5000);
+               });
+     
+               obj.student.click().then(function(){
+                 browser.sleep(5000);  
+               });
+     
+               
+               obj.inactivestudent.getCssValue('color').then(function(color){
+                   if(color=="rgba(169, 68, 66, 1)"){
+                 
+                       expect(obj.digital.isEnabled()).toBe(true).then(function(){
+                         console.log("Digital ID is disabled for inactive patrons");
+                       
+                       });
+                     expect((obj.preorder).isPresent()).toBe(true);
+                     
+                   }
+                   else
+                   {
+                    console.log("Digital ID is enabled for inactive patrons");
+                 
+                   }
+               });
+     
+             
+               
+               obj.remove.click().then(function(){
+                 browser.sleep(5000);
+               });
+               obj.remove1.click().then(function(){
+                 browser.sleep(5000);
+               });
+              
+               obj.logoutbutton.click().then(function(){	   
+                 browser.sleep(5000);
+               });
+           
+           },2500000);
+       
+       });
+       
+     
 
  using(d.Datadrivenpre, function (data, description) {
 		
 
 	it("PreOrder should be enabled for active patron" , function() {
 
-		
+
     var EC = protractor.ExpectedConditions;
 
-        obj.email1.sendKeys(data.emailm);
+        obj.email.sendKeys(data.emailm);
                       
          
-                  obj.password1.sendKeys(data.passwordm);
+                  obj.password.sendKeys(data.passwordm);
 
-                  obj.login4.click().then(function(){
+                  obj.login.click().then(function(){
                          browser.sleep(25000);
                          
                   });

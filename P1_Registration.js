@@ -1,7 +1,7 @@
 const { browser } = require("protractor");
 
 
-describe('Protractor psc2', function() {
+describe('PSC P1testcases', function() {
 	var obj=  require("./JsObjectpage.js");
   var using=  require("jasmine-data-provider");
   var d=  require("./data.js");
